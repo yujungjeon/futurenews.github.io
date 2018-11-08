@@ -10,46 +10,524 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Gugi|Nanum+Gothic" rel="stylesheet">
     <style>
+      .jumbotron {
+        background-color: transparent;
+      }
+      .container {
+        background-color: rgb(225, 225, 225, 0.9);
+        border-radius: 30px;
+      }
       .row {
         font-family: 'Nanum Gothic';
         margin-left: 10%;
         margin-right: 10%;
       }
+      .dropdown-item {
+         font-family:'Nanum Gothic';
+      }
     </style>
   </head>
-  <body>
+  <body style="background-image: url('img/int03_title.jpg'); background-size: cover; background-attachment:fixed;">
 
     <!-- Site Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active"><a class="nav-link" href="interactive.html"> < 전체기사보기 </a></li>
-        </ul>
+    <nav class="navbar navbar-dark bg-transparent">
+      <button class="navbar-toggler dropdown-toggle" id="navbarDropdown" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="dropdown-menu bg-transparent show" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item text-white" href="interactive.html" title="인터랙티브 전체 기사 보기">
+          < 전체기사
+        </a>
+        <a class="dropdown-item text-white" href="#서론" title="서론" target="_self">
+          서론
+        </a>
+        <a class="dropdown-item text-white" href="#유형별" title="유형별 검거인원지수" target="_self">
+          유형별
+        </a>
+        <a class="dropdown-item text-white" href="#지역별" title="지역별 검거인원지수" target="_self">
+          지역별
+        </a>
+        <a class="dropdown-item text-white" href="#국적별" title="국적별 검거인원지수" target="_self">
+          국적별
+        </a>
+        <a class="dropdown-item text-white" href="#결론" title="결론" target="_self">
+          결론
+        </a>
       </div>
     </nav>
     <!-- End of Site Navigation -->
 
-    <div class="container">
+    <div class="jumbotron" id="top">
+      <div class="container1">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="row">
+          <div class="col-md-12">
+            <p>
+              <h1 class="text-center text-white" style="font-size:400%; font-weight:bold; font-family: 'Gugi';">
+                  외국인은 범죄율이 낮다?
+              </h1>
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="text-center text-white">
+              10만명당 검거인원지수 통계를 활용한 기사의 허와 실
+            </h3>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-md-12">
+            <p class="text-right text-white">
+              동양사학과 정세용
+            </p>
+          </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+      </div>
+    </div>
 
+    <br>
+
+    <div id="서론" class="container">
       <div class="row">
         <div class="col-md-12">
+          <br>
           <p>
-            <h5>
-              인터랙티브 기사 03
-            </h5>
+            지난 6월 예멘 난민 문제가 화제가 되면서,
+            <a href="http://news.mt.co.kr/mtview.php?no=2018062315092586601" title="남궁민 기자, [팩트체크]무슬림의 '범죄 공포'…오해와 진실은?, 머니투데이">
+              머니투데이에서 외국인의 범죄율에 관해 팩트체크
+            </a>
+            를 실시하였다.
+          </p>
+          <p>
+            다만 그 과정에서
+            <a href="https://www.kdevelopedia.org/download.do?timeFile=/mnt/idas/asset/2013/03/18/DOC/PDF/04201303180125403079663.pdf&originFileName=12-AA-09._%EC%99%B8%EA%B5%AD%EC%9D%B8_%EB%B0%80%EC%A7%91%EC%A7%80%EC%97%AD%EC%9D%98_%EB%B2%94%EC%A3%84%EC%99%80_%EC%B9%98%EC%95%88%EC%8B%A4%ED%83%9C_%EC%97%B0%EA%B5%AC_%EC%B5%9C%EC%98%81%EC%8B%A0.pdf">
+              참고문헌1
+            </a>
+            (최영신·강석진, 『외국인 밀집지역의 범죄와 치안실태 연구』, 한국형사정책연구원, 2012)과
+            <a href="https://www.kic.re.kr/cmm/fms/FileDown.do?atchFileId=FILE_000000960057204&fileSn=0&browser=Opera">
+              참고문헌2
+            </a>
+            (최영신, 『공식 통계에 나타난 외국인 범죄의 발생 동향 및 특성』, 한국형사정책연구원, 2017)에 나온 표를
+            <strong><u>
+              어떠한 시각화도 없이 그대로 복사
+            </strong></u>
+            하여 붙여 놓았다. 그래서 처음에는 숫자로만 빽빽하게 채워진 이 표를 좀 더 읽기 쉽게 그래프로 표현하면서 내용을 보충해 보는 것만 해도 인터랙티브의 의미가 있겠다 싶어서 이 주제를 선정해 보았다.
           </p>
         </div>
       </div>
 
-      <hr class="primary">
+      <br>
 
+      <div class="row">
+        <div class="col-md-1">
 
-      <div class="row"> <!-- begin div for row1 -->
+        </div>
+        <div class="col-md-10">
+          <h5>
+            요약 : 머니투데이 남궁민 기자, [팩트체크]무슬림의 '범죄 공포'…오해와 진실은?
+          </h5>
+        </div>
+        <div class="col-md-1">
 
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-1">
 
+        </div>
+        <div class="col-md-2">
+          1.<strong>유형별</strong>검거인원지수
+        </div>
+        <div class="col-md-4">
+          ◇"외국인은 범죄율이 높다"
+        </div>
+        <div class="col-md-4">
+          > 실상은 내국인의 절반에도 못 미쳐
+        </div>
+        <div class="col-md-1">
 
-      </div> <!-- end div for row1 -->
+        </div>
 
+        <div class="col-md-1">
+
+        </div>
+        <div class="col-md-2">
+
+        </div>
+        <div class="col-md-4">
+          ◇"흉악범죄를 저지를 가능성 더 높다"
+        </div>
+        <div class="col-md-4">
+          > 성별·연령별 차이에 의한 착시
+        </div>
+        <div class="col-md-1">
+
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md-1">
+
+        </div>
+        <div class="col-md-2">
+          2.<strong>지역별</strong>검거인원지수
+        </div>
+        <div class="col-md-4">
+          ◇"외국인 밀집지역은 외국인 범죄의 온상이다"
+        </div>
+        <div class="col-md-4">
+          > 내국인에 비해 낮아
+        </div>
+        <div class="col-md-1">
+
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md-1">
+
+        </div>
+        <div class="col-md-2">
+          3.<strong>국적별</strong>검거인원지수
+        </div>
+        <div class="col-md-4">
+          ◇"이슬람권 출신은 다른 국적자보다 더 위험해"
+        </div>
+        <div class="col-md-4">
+          > 이슬람권 방글라데시, 인니 범죄율 최하위권
+        </div>
+        <div class="col-md-1">
+
+        </div>
+        <div class="col-md-1">
+
+        </div>
+        <div class="col-md-10">
+          <br>
+          <p>
+            cf) 검거인원지수란? 인구 10만 명 당 검거인원지수(단위 : 명). 내국인과 외국인의 범죄율을 동일선상에서 비교하기 위해 도입.
+          </p>
+        </div>
+        <div class="col-md-1">
+
+        </div>
+      </div>
+
+      <br>
+
+      <div class="row">
+        <div class="col-md-12">
+          <p>
+            <strong><font color="red">그런데 알고 보니</font></strong> 기사에서는 참고문헌의 내용 중 일부 표만 활용하여
+            <strong><u>
+              참고문헌과는 다소 다른 이야기
+            </u></strong>
+            를 하고 있었다.
+          </p>
+          <br>
+          <p>
+            따라서 본 글에서는 우선 기사에서 제시하는 표를 활용하여
+            <strong><u>
+              기자가 하고자 했던 말
+            </strong></u>
+            을 확인한 후,
+          </p>
+          <p>
+            기사에 활용되지 않았던 참고문헌의 다른 표들을 활용하여
+            <strong><u>
+              본래 참고문헌이 하고자 했던 말
+            </u></strong>
+            을 복원해 볼 것이다.
+          </p>
+          <br>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div id="유형별" class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <br>
+          <h3 style="font-family:'Gugi';">
+            1. 유형별 검거인원지수
+          </h3>
+          <hr>
+        </div>
+        <div class="col-md-12">
+          <p>
+            기사에서는 전체 범죄와 5대 범죄(살인, 강도, 강간, 절도, 폭력) 모두 외국인이 내국인에 비해 수치가 낮다는 표를 제시한다.
+          </p>
+        </div>
+        <br>
+        <div class='tableauPlaceholder' id='viz1541516200786' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;__&#47;__930&#47;1_1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='__930&#47;1_1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;__&#47;__930&#47;1_1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1541516200786');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1000px';vizElement.style.height='827px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+        <div class="col-md-1">
+
+        </div>
+        <div class="col-md-10">
+          <br>
+          <p>
+            ◇"외국인은 범죄율이 높다"…실상은 내국인 절반에 못 미쳐
+          </p>
+          <p>
+            "그러나
+            <strong><u>
+              5대 범죄(살인, 강도, 강간, 절도, 폭력)만을 떼어 놓고 보아도 여전히 내국인이 더 높은 검거인원지수를 보인다
+            </strong></u>
+            . 형사정책연구원이 펴낸 '외국인 밀집지역의 범죄와 치안실태 연구'에 따르면 2011년 기준 외국인의 5대 범죄 검거지수(인구 10만명 당 검거인원)은 918명으로, 내국인(1033명)보다 낮다. <strong><u>이런 추세는 2007년부터 꾸준히 이어지고 있다</u></strong>."
+          </p>
+        </div>
+        <div class="col-md-1">
+
+        </div>
+        <br>
+        <div class="col-md-12">
+          <p>
+            여기까지만 보면 외국인의 범죄율이 높다는 말은 전혀 근거가 없는 것처럼 보인다.
+          </p>
+          <p>
+            <strong><font color="red">
+              그러나
+            </font></strong>
+            기사에서 올린 표를 뜯어보면
+            <strong><u>
+              살인 및 강도의 경우
+            </strong></u>
+            그 수치가 내국인보다
+            <strong><u>
+              외국인이 크다
+            </strong></u>
+            는 점을 알 수 있다.
+          </p>
+        </div>
+        <br>
+        <div class='tableauPlaceholder' id='viz1541516231146' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;__&#47;__930&#47;7&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='__930&#47;7' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;__&#47;__930&#47;7&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1541516231146');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1000px';vizElement.style.height='415px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+        <div class="col-md-12">
+          <br>
+          <p>
+            그래프를 보면 살인 및 강도에서는 외국인의 수치가 항상 높다. 기사에서도 이를 의식했는지 별개의 단락으로 분리하여 논거를 제시하고 있다.
+          </p>
+        </div>
+        <div class="col-md-1">
+
+        </div>
+        <div class="col-md-10">
+          <p>
+            ◇"흉악범죄를 저지를 가능성 더 높다"…성별·연령 차이에 의한 착시
+          </p>
+          <p>
+            "하지만 이는 내국인에 비해 현저히
+            <strong><u>
+              높은 남성 비율
+            </u></strong>
+            , 상대적으로
+            <strong><u>
+              젊은 인구구성
+            </u></strong>
+            의 영향이 크다."
+          </p>
+          <p>
+            "지난해 기준 국내체류 외국인의 성비(남성의 수/여성의 수)는 지난해 기준 약 1.33으로 내국인의 성비(1)보다 현저히 높다. 검찰청 범죄분석통계에 따르면 2016년 기준 남성은 여성에 비해 살인을 5.9배, 강도는 9.1배 많이 저지른다."
+          </p>
+        </div>
+        <div class="col-md-1">
+
+        </div>
+        <br>
+        <div class="col-md-12">
+          <p>
+            이 통계는 외국인의 범죄통계가 아니라 그냥 우리나라 전체 범죄통계(
+            <a href="http://www.spo.go.kr/spo/info/stats/stats02.jsp" title="http://www.spo.go.kr/spo/info/stats/stats02.jsp">
+              검찰청 범죄분석통계
+            </a>
+            )이다. 내국인과 외국인은 차이가 있다(외국인의 범죄율이 더 낮다)는 점을 주장하는 기사에서 내국인의 영향이 큰 통계를 가지고 와서 외국인에 적용한다는 것 자체가
+            <strong><u>
+              논리적 오류
+            </strong></u>
+            이다. 백번 양보해서 외국인의 성별 연령별 범죄 경향이 내국인과 실제로 비슷하다 쳐도, 어쨌든 국내에 들어와 있는 외국인이 내국인보다 위험하다는 사실은 그대로이다.
+          </p>
+        </div>
+        <br>
+        <div class="col-md-12">
+          <p>
+            참고문헌1(2012)에 있는 더 이전의 통계 자료를 2011-2015 자료에 덧붙여서 그래프를 만들어 보았다.
+          </p>
+        </div>
+        <br>
+        <div class='tableauPlaceholder' id='viz1541516256169' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;__&#47;__930&#47;2&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='__930&#47;2' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;__&#47;__930&#47;2&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1541516256169');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1000px';vizElement.style.height='500px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+        <div class="col-md-12">
+          <br>
+          <p>
+            이렇게 보면 여전히 외국인의 수치가 내국인보다 항상 높았지만,
+            <strong><u>
+              현재의 수치가 상당히 개선된 것
+            </strong></u>
+            임을 알 수 있다. 위에서처럼 상관없는 통계 수치를 억지로 끌고 올 바에야, 과거의 수치와 비교해서 현재는 내국인과 매우 비슷한 수준까지 내려왔다는 식으로 풀어갔으면 좀 더 자연스러운 글이 되었을 것이다.
+          </p>
+          <br>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div id="지역별" class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <br>
+          <h3 style="font-family:'Gugi';">
+            2. 지역별 검거인원지수
+          </h3>
+          <hr>
+        </div>
+        <div class="col-md-12">
+          <p>
+            기자는 참고문헌1(2012)에서 전체 범죄에 관한 테이블만 가지고 와서 자신의 논거로 활용하여 우선 내국인의 수치가 외국인보다 압도적으로 높고, 외국인의 수치는 구로구를 제외하고는 전국 평균보다 낮으며, 내국인의 수치는 모두 전국 평균보다 높다고 말했다.
+          </p>
+        </div>
+        <br>
+        <div class='tableauPlaceholder' id='viz1541515109327' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;__&#47;__929&#47;1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='__929&#47;1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;__&#47;__929&#47;1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1541515109327');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1000px';vizElement.style.height='415px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+        <div class="col-md-12">
+          <br>
+          <p>
+            이것만 봤을 땐 외국인 범죄의 온상이라기보다는 내국인 범죄의 온상인 것처럼 보인다.
+          </p>
+          <p>
+            <strong><font color="red">
+              그러나
+            </font></strong>
+            참고문헌1(2012)에는 5대 범죄를 묶어서 나온 표도 제시되어 있다.
+          </p>
+        </div>
+        <br>
+        <div class='tableauPlaceholder' id='viz1541515132769' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;__&#47;__929&#47;6&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='__929&#47;6' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;__&#47;__929&#47;6&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1541515132769');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1000px';vizElement.style.height='415px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+        <div class="col-md-12">
+          <br>
+          <p>
+            5대 범죄의 경우 구로구, 영등포구, 안산시 단원구, 시흥시 모두 내국인, 외국인 할 것 없이 전국 평균보다 높은 수치를 보인다. 심지어 구로구에서는 외국인이 내국인보다 수치가 높게 나온다.
+          </p>
+        </div>
+        <br>
+        <div class='tableauPlaceholder' id='viz1541515158661' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;__&#47;__929&#47;4&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='__929&#47;4' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;__&#47;__929&#47;4&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1541515158661');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1000px';vizElement.style.height='500px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+        <br>
+        <br>
+      </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div id="국적별" class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <br>
+          <h3 style="font-family:'Gugi';">
+            3. 국적별 검거인원지수
+          </h3>
+          <hr>
+        </div>
+        <div class="col-md-12">
+          <p>
+            여기서는 2011-2015 데이터를 가지고 이슬람 국적 5개 중 2개 국가는 범죄율이 매우 낮다는 점을 강조하고 있다. 기사에서 언급하지 않았던 2007-2010 데이터를 합쳐서 살펴본 결과 큰 차이는 없었다.
+          </p>
+        </div>
+        <br>
+        <div class='tableauPlaceholder' id='viz1541517694762' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;__&#47;__934&#47;3&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='__934&#47;3' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;__&#47;__934&#47;3&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1541517694762');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1000px';vizElement.style.height='600px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+        <div class="col-md-12">
+          <br>
+          <p>
+            <strong><font color="red">
+              그러나
+            </font></strong>
+            참고문헌1(2012)에서는 애초에 이 테이블이 특정 국적에 대한 어떤 긍정/부정적인 이미지로 활용되는 것 자체를 경계하고 있었다.
+          </p>
+        </div>
+        <br>
+
+        <div class="col-md-1">
+
+        </div>
+        <div class="col-md-10">
+          <p>
+            "이러한 분석결과와 관련하여
+            <strong><u>
+              특정 국적 외국인이 다른 국적의 외국인에 비하여 범죄발생률이 높다거나 혹은 낮다고 일반화하여 해석하지 않도록
+            </u></strong>
+             주의할 필요가 있다. 국적별 등록외국인 10만명당 외국인 범죄자 검거인원은 각 외국인의 국적별 구성에서 범죄에 가담한 비율이 어느 정도인지를 판단하는 자료로 활용되어야 할 것이다.
+            예컨대, 몽골 국적 외국인의 등록외국인수 대비 범죄자수가 가장 높다고 하여 <strong><u>몽골 국적 외국인이 일반적으로 범죄발생 가능성이 높다고 해석해서는 안 되며, 국내에 체류하는 몽골 국적 외국인 중에는 범죄에 가담한 비율이 높다고 보아야</u></strong> 할 것이다."(p. 81)
+          </p>
+        </div>
+        <div class="col-md-1">
+
+        </div>
+        <br>
+        <div class="col-md-12">
+          <p>
+            즉, 이 수치는 그 나라의 범죄자들이 우리나라에 많이 들어온다면 얼마든지 바뀔 수 있는 수치라는 뜻이다.
+          </p>
+          <br>
+        </div>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="jumbotron" id="bottom">
+      <div id="결론" class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <br>
+            <h3 class="text-center" style="font-family:'Gugi';">
+              결론
+            </h3>
+            <hr>
+          </div>
+          <div class="col-md-12">
+            <h3>
+              외국인의 범죄율이 낮다는 말은 전체적으로는
+              <strong><u>
+                사실이다.
+              </u></strong>
+            </h3>
+            <h3>
+               다만 각 범죄 유형별/지역별로 따졌을 때에는
+               <strong><u>
+                 사실이 아니다.
+               </u></strong>
+            </h3>
+            <br>
+            <p>
+               좀 더 자극적인 범죄라 할 수 있는 살인/강도에서는 외국인의 범죄율이 높은 것이 사실이다.
+               기자는 결론을 미리 정해놓고 자기가 보고 싶은 것만 봤을 뿐이다.
+            </p>
+          </div>
+          <div class="col-md-12">
+            <p>
+              이 데이터로는 애초의 소재가 되었던 난민 수용에 대한 설득력 있는 근거가 될 수 없다.
+              차라리 정 반대 입장이라고 할 수 있는 "잠깐 머물다 가는 게 아닌 장기 체류 외국인은 무분별하게 받아들여서는 안된다"는 주장의 근거로 적절할 것이다.
+            </p>
+            <br>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- end div for container -->
 
