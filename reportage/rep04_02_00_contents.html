@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <title>기획기사 4조</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style type="text/css">
+      body{
+        background: black;
+      }
+    </style>
+  </head>
+  <body>
+    <script type="text/javascript" src="team4/script/contents_02.js"></script>
+    <script language="javascript" type="text/javascript">
+      //In pixels
+      var curr_idx = 2;
+      window.onload = function() {
+        var radius = 1;
+        var opacFlag = false;
+        var drawToggle = setInterval(function(){
+          //draw circle
+           draw(radius, 0, 0, 0, 0);
+           radius += 1.4;
+           if(radius >= 235) {
+             clearInterval(drawToggle);
+             var opac = new Array();
+             opac[0] = 0; opac[1] = 0;
+             var opacToggle = setInterval(function(){
+               //appear space logo
+               appearSpaceLogo(opac[0], 0);
+               opac[0] += 0.01;
+               if(opac[0] >= 1) {
+                 clearInterval(opacToggle);
+                 var lineLength = 535
+                 var downinitX1 = 735;
+                 var downinitY1 = 535;
+                 var lineToggle = setInterval(function(){
+                   //draw center line
+                   draw(lineLength, 1, downinitX1, downinitY1, 0);
+                   lineLength += 1;
+                   if(lineLength >= 700) {
+                     clearInterval(lineToggle);
+                     var x_position = 1;
+                     var y_position = 700;
+                     var sideinitX1 = 735;
+                     var sideinitY1 = 700;
+                     var sideLineToggle = setInterval(function(){
+                       //draw two top lines & one center line
+                       draw(x_position, 2, sideinitX1, sideinitY1, 0);
+                       draw(x_position, 2, sideinitX1, sideinitY1, 1);
+                       draw(y_position, 1, sideinitX1, sideinitY1, 0);
+                       appearSpaceLogo(opac[1], 1);
+                       appearSpaceLogo(opac[1], 2);
+                       opac[1] += 0.0006
+                       x_position += 1;
+                       y_position += 1;
+
+                       if(x_position >= 575) {
+                         clearInterval(sideLineToggle);
+                         var move = 700;
+                         var downTwoLineToggle = setInterval(function(){
+                           //draw two down lines
+                           draw(move, 1, sideinitX1 - 574, sideinitY1-5, 0);
+                           draw(move, 1, sideinitX1 + 574, sideinitY1-5, 0);
+                           move += 1;
+                           appearSpaceLogo(opac[1], 1);
+                           appearSpaceLogo(opac[1], 2);
+                           opac[1] += 0.0006
+
+                           if(move >= 1280) {
+                             clearInterval(downTwoLineToggle);
+                             //draw two bottom lines
+                             var move2 = 1;
+                             var sideTwoLineToggle = setInterval(function(){
+                               draw(move2, 2, sideinitX1 - 578, sideinitY1+575, 1);
+                               draw(move2, 2, sideinitX1 + 578, sideinitY1+575, 0);
+                               move2 += 1;
+                               appearSpaceLogo(opac[1], 1);
+                               appearSpaceLogo(opac[1], 2);
+                               opac[1] += 0.0006
+
+                               if(move2 >= 580) {
+                                 clearInterval(sideTwoLineToggle);
+                                 console.log(opac[1]);
+                               }
+                             }, 7);
+                           }
+                         }, 7); //draw two down line
+                       }
+                     }, 7); //draw side line
+                   }
+                 },7); //draw down line
+               }
+             }, 35); // do opacity
+           }
+         }, 35); // draw circle
+      }
+    </script>
+
+    <div>
+      <script type="text/javascript" src="team4/script/button.js"></script>
+      <img id="prev" onmouseover="changeImage(this, 0)" onmouseout="changeImage(this, 1)" onclick="canPrev(curr_idx)" src="team4\img\00sub\past.PNG" alt="prev" title="prev button" height="50px" width="80px" style="position: relative; top:20px; left:20px"/>
+    </div>
+
+    <div>
+      <script type="text/javascript" src="team4/script/button.js"></script>
+      <img id="next" onmouseover="changeImage(this, 2)" onmouseout="changeImage(this, 3)" onclick="canNext(curr_idx)" src="team4\img\00sub\post.PNG" alt="next" title="next button" height="50px" width="80px" style="position: absolute; top:20px; right:20px"/>
+    </div>
+
+    <canvas id="circle" width="1600" height="1800"></canvas>
+
+    <div>
+      <script type="text/javascript" src="team4/script/contents_02.js"></script>
+      <img id="space" onload="initPosition(this, 0)" src="team4\img\02Contents\spaceLogo.png" alt="bottomBack" title="background" style="opacity:0"/>
+    </div>
+
+    <div>
+      <script type="text/javascript" src="team4/script/button.js"></script>
+      <img id="space1" onclick="popUpPage(0)" onload="initPosition(this, 1)" onmouseover="changeImage(this, 4)" onmouseout="changeImage(this, 5)" src="team4\img\02Contents\space1.PNG" alt="space1" title="space1" style="position:absolute; top:850px; left:200px; width: 500px; height:400px; opacity:0"/>
+    </div>
+
+    <div>
+      <script type="text/javascript" src="team4/script/button.js"></script>
+      <img id="space2" onclick="popUpPage(1)" onload="initPosition(this, 2)" onmouseover="changeImage(this, 6)" onmouseout="changeImage(this, 7)" src="team4\img\02Contents\space_2.PNG" alt="space2" title="space2" style="position:absolute; top:867px; left:775px; width: 480px; height:350px; opacity:0"/>
+    </div>
+
+    <div id="bottomButton">
+    </div>
+
+    <!-- end div for container -->
+
+    <!-- 이 아래부터는 무시하세요! -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  </body>
+</html>
