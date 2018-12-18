@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <title>기획기사 4조</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style type="text/css">
+    body{
+      background: black;
+    }
+    </style>
+  </head>
+  <body>
+    <script src="team4/script/intro_01.js"></script>
+    <script language="javascript" type="text/javascript">
+      //In pixels
+      var moveLimit = 530;
+      var moveInterval = 0.5;
+      var curr_idx = 0;
+      window.onload = function() {
+        createRain();
+      }
+    </script>
+
+    <iframe src="team4/music/intro0.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+
+    <div>
+      <script type="text/javascript" src="team4/script/button.js"></script>
+      <img id="next" onmouseover="changeImage(this, 2)" onmouseout="changeImage(this, 3)" onclick="canNext(curr_idx)" src="team4\img\00sub\post.PNG" alt="next" title="next button" height="50px" width="80px" style="position: absolute; top:20px; right:20px"/>
+    </div>
+
+    <div>
+      <img id="down" src="team4\img\01Intro\down.png" alt="bottomBack" title="background" width="1530" height="450"  style="position: absolute; top:290px"/>
+    </div>
+
+    <script type="text/javascript" src="team4/script/intro_01.js"></script>
+    <div id="rain">
+    </div>
+
+    <div id="hu1">
+        <script type="text/javascript" src="team4/script/intro_01.js"></script>
+        <img onclick="openNewPage(1)" onload="moveImage(this, moveLimit, moveInterval, 2, 0)" src="team4\img\01Intro\human1.PNG" alt="test" title="do test" style="opacity:0" width="60" height="79"/>
+    </div>
+
+    <div id="hu2">
+        <script type="text/javascript" src="team4/script/intro_01.js"></script>
+        <img onclick="openNewPage(2)" onload="moveImage(this, moveLimit, moveInterval, 6, 0)" src="team4\img\01Intro\human2.PNG" alt="test" title="do test" style="opacity:0" width="60" height="79"/>
+    </div>
+
+    <div id="hu3">
+        <script type="text/javascript" src="team4/script/intro_01.js"></script>
+        <img onclick="openNewPage(3)" onload="moveImage(this, moveLimit, moveInterval, 10, 0)" src="team4\img\01Intro\human3.PNG" alt="test" title="do test" style="opacity:0" width="60" height="79"/>
+    </div>
+    <!-- end div for container -->
+
+    <!-- 이 아래부터는 무시하세요! -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  </body>
+</html>
