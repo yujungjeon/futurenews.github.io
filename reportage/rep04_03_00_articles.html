@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <title>기획기사 4조</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style type="text/css">
+      body{
+        background: black;
+      }
+    </style>
+  </head>
+  <body style="background-image:url(team4/img/03Articles/ex1b.jpg)">
+    <script language="javascript" type="text/javascript">
+      //In pixels
+      var curr_idx = 3;
+    </script>
+
+    <div>
+      <script type="text/javascript" src="team4/script/button.js"></script>
+      <img id="prev" onmouseover="changeImage(this, 0)" onmouseout="changeImage(this, 1)" onclick="canPrev(curr_idx)" src="team4\img\00sub\past.PNG" alt="prev" title="prev button" height="50px" width="80px" style="position: absolute; top:20px; left:20px"/>
+    </div>
+
+    <div>
+      <script type="text/javascript" src="team4/script/button.js"></script>
+      <img id="next" onmouseover="changeImage(this, 2)" onmouseout="changeImage(this, 3)" onclick="canNext(curr_idx)" src="team4\img\00sub\post.PNG" alt="next" title="next button" height="50px" width="80px" style="position: absolute; top:20px; right:20px"/>
+    </div>
+
+    <div>
+      <img id="mainTitle" src="team4\img\03Articles\people1.PNG" alt="title" title="title" style="position: absolute; top:85px; left:600px"/>
+    </div>
+
+    <div>
+      <script type="text/javascript" src="team4/script/articles_03.js"></script>
+      <img id="small1" onmouseover="changeOpacity(0, 1)" onmouseout="changeOpacity(0, 0)" onclick="slideImage(0)" src="team4\img\03Articles\ex1s.jpg" alt="small1" title="smallImage1" style="position: absolute; top:200px; left:200px; width:200px;height:100px"/>
+    </div>
+
+    <div>
+      <script type="text/javascript" src="team4/script/articles_03.js"></script>
+      <img id="small2" onmouseover="changeOpacity(1, 1)" onmouseout="changeOpacity(1, 0)" onclick="slideImage(1)" src="team4\img\03Articles\ex2s.jpg" alt="small2" title="smallImage2" style="position: absolute; top:300px; left:200px; width:200px;height:100px"/>
+    </div>
+
+    <div>
+      <script type="text/javascript" src="team4/script/articles_03.js"></script>
+      <img id="small3" onmouseover="changeOpacity(2, 1)" onmouseout="changeOpacity(2, 0)" onclick="slideImage(2)" src="team4\img\03Articles\ex3s.jpg" alt="small3" title="smallImage3" style="position: absolute; top:400px; left:200px; width:200px;height:100px"/>
+    </div>
+
+    <div>
+      <script type="text/javascript" src="team4/script/articles_03.js"></script>
+      <img id="small4" onmouseover="changeOpacity(3, 1)" onmouseout="changeOpacity(3, 0)" onclick="slideImage(3)" src="team4\img\03Articles\ex4s.jpg" alt="small4" title="smallImage4" style="position: absolute; top:500px; left:200px; width:200px;height:100px"/>
+    </div>
+
+    <div>
+      <script type="text/javascript" src="team4/script/articles_03.js"></script>
+      <img id="small5" onmouseover="changeOpacity(4, 1)" onmouseout="changeOpacity(4, 0)" onclick="slideImage(4)" src="team4\img\03Articles\ex5s.jpg" alt="small5" title="smallImage5" style="position: absolute; top:600px; left:200px; width:200px;height:100px"/>
+    </div>
+
+    <div id="big">
+      <img src="team4\img\03Articles\ex1b.png" alt="big" title="bigImage" style="position: absolute; top:200px; left:400px; width:900px;height:500px"/>
+    </div>
+
+    <!-- end div for container -->
+
+    <!-- 이 아래부터는 무시하세요! -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  </body>
+</html>
