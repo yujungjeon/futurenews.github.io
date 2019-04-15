@@ -1,0 +1,71 @@
+.logo {
+    background-color:  #FF9999;
+    text-align: left;
+    padding: 20px;
+}
+
+.naming {
+    text-align: right;
+    color: #000000;
+    padding-left: 500px;
+
+}
+
+
+ul > li {
+    padding:5px;
+
+}
+
+.centered { display: table; margin-left: auto; margin-right: auto; }
+
+ul:nth-child(2) {
+    float:right
+}
+
+body {
+    background-image: url(img/int01_img1.jpeg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    font-size-adjust: auto;
+
+}
+
+body > div {
+    width: 800px;
+    align-content: center;
+    background-color: rgb(255,255,255,0.8);
+}
+
+
+body > div > h3 {
+    text-align: center;
+    background-color: #FFFFFF;
+    font-size-adjust: auto;
+    border-bottom-color: #000000;
+    border-bottom-width: thin;
+    padding: 10px;
+    padding-left: 20px;
+
+}
+
+body > div > h6 {
+    font-size-adjust: auto;
+
+}
+
+body > div > h4 {
+    padding-left: 20px;
+    padding-right: 10px;
+    font-size-adjust: auto;
+
+}
+
+body > div > p {
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size-adjust: auto;
+}
