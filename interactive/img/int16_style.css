@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'KOMACON'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.2/KOMACON.woff') format('woff');
+  font-weight: normal; font-style: normal; }
+
+*{ font-family: 'KOMACON'; }
+.row { text-align: left;}
+
+.h4, h4,
+.h5, h5,
+.h6, h6 { font-weight: bold; padding-top: 1em; }
+      p { padding-left: 1em; }
+      a { color: #d00687; }
+      a:hover { color: #ff35b6; }
+      hr.greyline { border-top: 1px solid grey; }
